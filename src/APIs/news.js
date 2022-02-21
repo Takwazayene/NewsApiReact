@@ -1,9 +1,9 @@
 import axios from 'axios';
 import { auth } from './auth';
 const endPointApiUrl = 'https://newsapi.org/v2/everything?q=actualités';
-const qInTitle = 'food';
+const qInTitle = 'sport';
 const language = 'en';
-const apiKey = '22de0dc39bab4616960610b02d800650';
+const apiKey = 'd04b4b00bc314bef8ed54f05c0ffc01b';
 
 export function getNews(pageSize, page, searchKeyword) {
   return axios.get(`${endPointApiUrl}&qInTitle=${searchKeyword}&apiKey=${apiKey}`);

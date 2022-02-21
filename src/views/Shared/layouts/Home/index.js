@@ -6,8 +6,7 @@ import Footer from '../../footer';
 
 export default function Home(props) {
   const { children, title } = props;
-  console.log("children",children)
-  console.log("title",title)
+  
   return (
     <>
       <Helmet>

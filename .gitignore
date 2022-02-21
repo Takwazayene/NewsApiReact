@@ -28,5 +28,6 @@ debug.log
 .vscode/setting.json
 .vs/slnx.sqlite
 setting.json
+/src/config.json
 .vscode
 debug.log

@@ -8,11 +8,10 @@ import { newsActions } from '../../../actions/news';
 import SearchNews from './searchNews';
 import SearchByCountry from './searchByCountry';
 import SearchByLanguage from './SearchByLanguage';
-
-
 import '../_style.scss';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import axios from 'axios';
+const config = require('../../../config.json');
 
 
 export default function News() {
@@ -29,8 +28,10 @@ export default function News() {
   const user = localStorage.getItem('user');
   const parseUser = JSON.parse(user);
 
+require('dotenv').config()
 
-  const apiKey = 'd04b4b00bc314bef8ed54f05c0ffc01b'; 
+  //const apiKey = process.env.REACT_APP_API_KEY; 
+const apiKey = config.api_key; 
 
   function handleDetailsShow(breakpoint) {
     if (breakpoint) {
